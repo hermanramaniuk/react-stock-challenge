@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="4" failures="4" time="5.74">
+  <testsuite name="undefined" errors="0" failures="4" skipped="0" timestamp="2021-06-02T13:07:52" time="4.939" tests="4">
+    <testcase classname=" initial UI is rendered as expected" name=" initial UI is rendered as expected" time="0.038">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: null
+Received: &lt;ul class=&quot;mt-50 slide-up-fade-in styled&quot; data-testid=&quot;stock-data&quot; id=&quot;stockData&quot;&gt;&lt;li class=&quot;py-10&quot; /&gt;&lt;/ul&gt;
+    at Object.&lt;anonymous&gt; (/Users/neumark/git/marta-frontend-challenge/src/App.test.js:18:39)
+    at Object.asyncJestTest (/Users/neumark/git/marta-frontend-challenge/node_modules/jest-jasmine2/build/jasmineAsyncInstall.js:102:37)
+    at /Users/neumark/git/marta-frontend-challenge/node_modules/jest-jasmine2/build/queueRunner.js:43:12
+    at new Promise (&lt;anonymous&gt;)
+    at mapper (/Users/neumark/git/marta-frontend-challenge/node_modules/jest-jasmine2/build/queueRunner.js:26:19)
+    at /Users/neumark/git/marta-frontend-challenge/node_modules/jest-jasmine2/build/queueRunner.js:73:41
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and no results found" name=" search is made on by clicking on search button and no results found" time="1.023">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: null
+Received: &lt;ul class=&quot;mt-50 slide-up-fade-in styled&quot; data-testid=&quot;stock-data&quot; id=&quot;stockData&quot;&gt;&lt;li class=&quot;py-10&quot; /&gt;&lt;/ul&gt;
+
+&lt;html&gt;
+  &lt;head /&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;h8k-navbar
+          header=&quot;Stock Data&quot;
+        /&gt;
+        &lt;div
+          class=&quot;layout-column align-items-center mt-50&quot;
+        &gt;
+          &lt;section
+            class=&quot;layout-row align-items-center justify-content-center&quot;
+          &gt;
+            &lt;input
+              class=&quot;large&quot;
+              data-testid=&quot;app-input&quot;
+              id=&quot;app-input&quot;
+              placeholder=&quot;5-January-2000&quot;
+              type=&quot;text&quot;
+            /&gt;
+            &lt;button
+              class=&quot;&quot;
+              data-testid=&quot;submit-button&quot;
+              id=&quot;submit-button&quot;
+            &gt;
+              Search
+            &lt;/button&gt;
+          &lt;/section&gt;
+          &lt;ul
+            class=&quot;mt-50 slide-up-fade-in styled&quot;
+            data-testid=&quot;stock-data&quot;
+            id=&quot;stockData&quot;
+          &gt;
+            &lt;li
+              class=&quot;py-10&quot;
+            /&gt;
+          &lt;/ul&gt;
+          &lt;div
+            class=&quot;mt-50 slide-up-fade-in&quot;
+            data-testid=&quot;no-result&quot;
+            id=&quot;no-result&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    at /Users/neumark/git/marta-frontend-challenge/src/App.test.js:35:41
+    at runWithExpensiveErrorDiagnosticsDisabled (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/config.js:51:12)
+    at checkCallback (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/wait-for.js:127:77)
+    at checkRealTimersCallback (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/wait-for.js:119:16)
+    at Timeout.callback (/Users/neumark/git/marta-frontend-challenge/node_modules/jsdom/lib/jsdom/browser/Window.js:671:19)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)</failure>
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and result found - test 1" name=" search is made on by clicking on search button and result found - test 1" time="1.011">
+      <failure>Error: expect(received).toHaveLength(expected)
+
+Expected length: 4
+Received length: 1
+Received object: [&lt;li class=&quot;py-10&quot; /&gt;]
+
+&lt;html&gt;
+  &lt;head /&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;h8k-navbar
+          header=&quot;Stock Data&quot;
+        /&gt;
+        &lt;div
+          class=&quot;layout-column align-items-center mt-50&quot;
+        &gt;
+          &lt;section
+            class=&quot;layout-row align-items-center justify-content-center&quot;
+          &gt;
+            &lt;input
+              class=&quot;large&quot;
+              data-testid=&quot;app-input&quot;
+              id=&quot;app-input&quot;
+              placeholder=&quot;5-January-2000&quot;
+              type=&quot;text&quot;
+            /&gt;
+            &lt;button
+              class=&quot;&quot;
+              data-testid=&quot;submit-button&quot;
+              id=&quot;submit-button&quot;
+            &gt;
+              Search
+            &lt;/button&gt;
+          &lt;/section&gt;
+          &lt;ul
+            class=&quot;mt-50 slide-up-fade-in styled&quot;
+            data-testid=&quot;stock-data&quot;
+            id=&quot;stockData&quot;
+          &gt;
+            &lt;li
+              class=&quot;py-10&quot;
+            /&gt;
+          &lt;/ul&gt;
+          &lt;div
+            class=&quot;mt-50 slide-up-fade-in&quot;
+            data-testid=&quot;no-result&quot;
+            id=&quot;no-result&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    at /Users/neumark/git/marta-frontend-challenge/src/App.test.js:61:32
+    at runWithExpensiveErrorDiagnosticsDisabled (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/config.js:51:12)
+    at checkCallback (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/wait-for.js:127:77)
+    at checkRealTimersCallback (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/wait-for.js:119:16)
+    at Timeout.callback (/Users/neumark/git/marta-frontend-challenge/node_modules/jsdom/lib/jsdom/browser/Window.js:671:19)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)</failure>
+    </testcase>
+    <testcase classname=" search is made on by clicking on search button and result found - test 2" name=" search is made on by clicking on search button and result found - test 2" time="1.012">
+      <failure>Error: expect(received).toHaveLength(expected)
+
+Expected length: 4
+Received length: 1
+Received object: [&lt;li class=&quot;py-10&quot; /&gt;]
+
+&lt;html&gt;
+  &lt;head /&gt;
+  &lt;body&gt;
+    &lt;div&gt;
+      &lt;div&gt;
+        &lt;h8k-navbar
+          header=&quot;Stock Data&quot;
+        /&gt;
+        &lt;div
+          class=&quot;layout-column align-items-center mt-50&quot;
+        &gt;
+          &lt;section
+            class=&quot;layout-row align-items-center justify-content-center&quot;
+          &gt;
+            &lt;input
+              class=&quot;large&quot;
+              data-testid=&quot;app-input&quot;
+              id=&quot;app-input&quot;
+              placeholder=&quot;5-January-2000&quot;
+              type=&quot;text&quot;
+            /&gt;
+            &lt;button
+              class=&quot;&quot;
+              data-testid=&quot;submit-button&quot;
+              id=&quot;submit-button&quot;
+            &gt;
+              Search
+            &lt;/button&gt;
+          &lt;/section&gt;
+          &lt;ul
+            class=&quot;mt-50 slide-up-fade-in styled&quot;
+            data-testid=&quot;stock-data&quot;
+            id=&quot;stockData&quot;
+          &gt;
+            &lt;li
+              class=&quot;py-10&quot;
+            /&gt;
+          &lt;/ul&gt;
+          &lt;div
+            class=&quot;mt-50 slide-up-fade-in&quot;
+            data-testid=&quot;no-result&quot;
+            id=&quot;no-result&quot;
+          /&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    at /Users/neumark/git/marta-frontend-challenge/src/App.test.js:90:32
+    at runWithExpensiveErrorDiagnosticsDisabled (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/config.js:51:12)
+    at checkCallback (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/wait-for.js:127:77)
+    at checkRealTimersCallback (/Users/neumark/git/marta-frontend-challenge/node_modules/@testing-library/dom/dist/wait-for.js:119:16)
+    at Timeout.callback (/Users/neumark/git/marta-frontend-challenge/node_modules/jsdom/lib/jsdom/browser/Window.js:671:19)
+    at listOnTimeout (internal/timers.js:554:17)
+    at processTimers (internal/timers.js:497:7)</failure>
+    </testcase>
+  </testsuite>
+</testsuites>
